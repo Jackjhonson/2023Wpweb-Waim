@@ -1,0 +1,148 @@
+2023-04-15 15:06:48,161     INFO                      Base: data           : mimic
+2023-04-15 15:06:48,162     INFO                      Base: delay          : 0
+2023-04-15 15:06:48,162     INFO                      Base: explainer      : ['winit']
+2023-04-15 15:06:48,162     INFO                      Base: cv             : [0, 1, 2, 3, 4]
+2023-04-15 15:06:48,162     INFO                      Base: testbs         : -1
+2023-04-15 15:06:48,162     INFO                      Base: dataseed       : 1234
+2023-04-15 15:06:48,162     INFO                      Base: datapath       : None
+2023-04-15 15:06:48,162     INFO                      Base: explainerseed  : 2345
+2023-04-15 15:06:48,162     INFO                      Base: outpath        : ./output/
+2023-04-15 15:06:48,162     INFO                      Base: ckptpath       : ./ckpt/
+2023-04-15 15:06:48,162     INFO                      Base: plotpath       : ./plots/
+2023-04-15 15:06:48,162     INFO                      Base: logpath        : ./logs/
+2023-04-15 15:06:48,162     INFO                      Base: resultfile     : results.csv
+2023-04-15 15:06:48,163     INFO                      Base: logfile        : None
+2023-04-15 15:06:48,163     INFO                      Base: train          : False
+2023-04-15 15:06:48,163     INFO                      Base: traingen       : True
+2023-04-15 15:06:48,163     INFO                      Base: skipexplain    : True
+2023-04-15 15:06:48,163     INFO                      Base: eval           : False
+2023-04-15 15:06:48,163     INFO                      Base: loglevel       : info
+2023-04-15 15:06:48,163     INFO                      Base: nondeterministic: False
+2023-04-15 15:06:48,163     INFO                      Base: hiddensize     : 200
+2023-04-15 15:06:48,163     INFO                      Base: batchsize      : 100
+2023-04-15 15:06:48,163     INFO                      Base: dropout        : 0.5
+2023-04-15 15:06:48,163     INFO                      Base: numlayers      : 1
+2023-04-15 15:06:48,163     INFO                      Base: modeltype      : gru
+2023-04-15 15:06:48,163     INFO                      Base: lr             : None
+2023-04-15 15:06:48,164     INFO                      Base: joint          : False
+2023-04-15 15:06:48,164     INFO                      Base: conditional    : False
+2023-04-15 15:06:48,164     INFO                      Base: area           : None
+2023-04-15 15:06:48,164     INFO                      Base: blurtype       : None
+2023-04-15 15:06:48,164     INFO                      Base: deletion       : None
+2023-04-15 15:06:48,164     INFO                      Base: sizereg        : None
+2023-04-15 15:06:48,164     INFO                      Base: timereg        : None
+2023-04-15 15:06:48,164     INFO                      Base: loss           : None
+2023-04-15 15:06:48,164     INFO                      Base: epoch          : 200
+2023-04-15 15:06:48,164     INFO                      Base: lastonly       : None
+2023-04-15 15:06:48,164     INFO                      Base: window         : [10]
+2023-04-15 15:06:48,164     INFO                      Base: winitmetric    : ['pd']
+2023-04-15 15:06:48,164     INFO                      Base: usedatadist    : False
+2023-04-15 15:06:48,164     INFO                      Base: samples        : -1
+2023-04-15 15:06:48,165     INFO                      Base: maskseed       : 43814
+2023-04-15 15:06:48,165     INFO                      Base: mask           : ['std', 'end']
+2023-04-15 15:06:48,165     INFO                      Base: top            : 50
+2023-04-15 15:06:48,165     INFO                      Base: toppc          : 0.05
+2023-04-15 15:06:48,165     INFO                      Base: drop           : ['local', 'global', 'bal']
+2023-04-15 15:06:48,165     INFO                      Base: aggregate      : ['mean']
+2023-04-15 15:06:48,165     INFO                      Base: Time elapsed: 0.0035941600799560547
+2023-04-15 15:06:48,165    ERROR                      Base: [Errno 2] No such file or directory: 'data/patient_vital_preprocessed.pkl'
+Traceback (most recent call last):
+  File "/home/lzy/XAICode/WinIT-main/winit/run.py", line 399, in <module>
+    dataset.load_data()
+  File "/home/lzy/XAICode/WinIT-main/winit/dataloader.py", line 199, in load_data
+    with (self.data_path / self.file_name).open("rb") as f:
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/patient_vital_preprocessed.pkl'
+Traceback (most recent call last):
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/lzy/XAICode/WinIT-main/winit/run.py", line 477, in <module>
+    raise e
+  File "/home/lzy/XAICode/WinIT-main/winit/run.py", line 399, in <module>
+    dataset.load_data()
+  File "/home/lzy/XAICode/WinIT-main/winit/dataloader.py", line 199, in load_data
+    with (self.data_path / self.file_name).open("rb") as f:
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/patient_vital_preprocessed.pkl'
+2023-04-15 15:10:53,463     INFO                      Base: data           : mimic
+2023-04-15 15:10:53,463     INFO                      Base: delay          : 0
+2023-04-15 15:10:53,463     INFO                      Base: explainer      : ['winit']
+2023-04-15 15:10:53,463     INFO                      Base: cv             : [0, 1, 2, 3, 4]
+2023-04-15 15:10:53,463     INFO                      Base: testbs         : -1
+2023-04-15 15:10:53,463     INFO                      Base: dataseed       : 1234
+2023-04-15 15:10:53,463     INFO                      Base: datapath       : None
+2023-04-15 15:10:53,463     INFO                      Base: explainerseed  : 2345
+2023-04-15 15:10:53,463     INFO                      Base: outpath        : ./output/
+2023-04-15 15:10:53,463     INFO                      Base: ckptpath       : ./ckpt/
+2023-04-15 15:10:53,463     INFO                      Base: plotpath       : ./plots/
+2023-04-15 15:10:53,464     INFO                      Base: logpath        : ./logs/
+2023-04-15 15:10:53,464     INFO                      Base: resultfile     : results.csv
+2023-04-15 15:10:53,464     INFO                      Base: logfile        : None
+2023-04-15 15:10:53,464     INFO                      Base: train          : False
+2023-04-15 15:10:53,464     INFO                      Base: traingen       : True
+2023-04-15 15:10:53,464     INFO                      Base: skipexplain    : True
+2023-04-15 15:10:53,464     INFO                      Base: eval           : False
+2023-04-15 15:10:53,464     INFO                      Base: loglevel       : info
+2023-04-15 15:10:53,464     INFO                      Base: nondeterministic: False
+2023-04-15 15:10:53,464     INFO                      Base: hiddensize     : 200
+2023-04-15 15:10:53,464     INFO                      Base: batchsize      : 100
+2023-04-15 15:10:53,464     INFO                      Base: dropout        : 0.5
+2023-04-15 15:10:53,464     INFO                      Base: numlayers      : 1
+2023-04-15 15:10:53,465     INFO                      Base: modeltype      : gru
+2023-04-15 15:10:53,465     INFO                      Base: lr             : None
+2023-04-15 15:10:53,465     INFO                      Base: joint          : False
+2023-04-15 15:10:53,465     INFO                      Base: conditional    : False
+2023-04-15 15:10:53,465     INFO                      Base: area           : None
+2023-04-15 15:10:53,465     INFO                      Base: blurtype       : None
+2023-04-15 15:10:53,465     INFO                      Base: deletion       : None
+2023-04-15 15:10:53,465     INFO                      Base: sizereg        : None
+2023-04-15 15:10:53,465     INFO                      Base: timereg        : None
+2023-04-15 15:10:53,465     INFO                      Base: loss           : None
+2023-04-15 15:10:53,465     INFO                      Base: epoch          : 200
+2023-04-15 15:10:53,465     INFO                      Base: lastonly       : None
+2023-04-15 15:10:53,465     INFO                      Base: window         : [10]
+2023-04-15 15:10:53,465     INFO                      Base: winitmetric    : ['pd']
+2023-04-15 15:10:53,466     INFO                      Base: usedatadist    : False
+2023-04-15 15:10:53,466     INFO                      Base: samples        : -1
+2023-04-15 15:10:53,466     INFO                      Base: maskseed       : 43814
+2023-04-15 15:10:53,466     INFO                      Base: mask           : ['std', 'end']
+2023-04-15 15:10:53,466     INFO                      Base: top            : 50
+2023-04-15 15:10:53,466     INFO                      Base: toppc          : 0.05
+2023-04-15 15:10:53,466     INFO                      Base: drop           : ['local', 'global', 'bal']
+2023-04-15 15:10:53,466     INFO                      Base: aggregate      : ['mean']
+2023-04-15 15:10:53,466     INFO                      Base: Time elapsed: 0.0035707950592041016
+2023-04-15 15:10:53,466    ERROR                      Base: [Errno 2] No such file or directory: 'data/patient_vital_preprocessed.pkl'
+Traceback (most recent call last):
+  File "/home/lzy/XAICode/WinIT-main/winit/run.py", line 399, in <module>
+    dataset.load_data()
+  File "/home/lzy/XAICode/WinIT-main/winit/dataloader.py", line 199, in load_data
+    with (self.data_path / self.file_name).open("rb") as f:
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/patient_vital_preprocessed.pkl'
+Traceback (most recent call last):
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/lzy/XAICode/WinIT-main/winit/run.py", line 477, in <module>
+    raise e
+  File "/home/lzy/XAICode/WinIT-main/winit/run.py", line 399, in <module>
+    dataset.load_data()
+  File "/home/lzy/XAICode/WinIT-main/winit/dataloader.py", line 199, in load_data
+    with (self.data_path / self.file_name).open("rb") as f:
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/home/lzy/anaconda3/envs/winit/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'data/patient_vital_preprocessed.pkl'
